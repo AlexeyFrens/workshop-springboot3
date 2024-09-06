@@ -1,4 +1,4 @@
-package com.alexeyprojects.course.enums;
+package com.alexeyprojects.course.entities.enums;
 
 public enum OrderStatus {
     WAITING_PAYMENT(1),

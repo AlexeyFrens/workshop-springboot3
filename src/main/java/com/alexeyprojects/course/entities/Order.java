@@ -1,6 +1,6 @@
 package com.alexeyprojects.course.entities;
 
-import com.alexeyprojects.course.enums.OrderStatus;
+import com.alexeyprojects.course.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 

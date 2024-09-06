@@ -4,7 +4,7 @@ import com.alexeyprojects.course.entities.Category;
 import com.alexeyprojects.course.entities.Order;
 import com.alexeyprojects.course.entities.Product;
 import com.alexeyprojects.course.entities.User;
-import com.alexeyprojects.course.enums.OrderStatus;
+import com.alexeyprojects.course.entities.enums.OrderStatus;
 import com.alexeyprojects.course.repositories.CategoryRepository;
 import com.alexeyprojects.course.repositories.OrderRepository;
 import com.alexeyprojects.course.repositories.ProductRepository;

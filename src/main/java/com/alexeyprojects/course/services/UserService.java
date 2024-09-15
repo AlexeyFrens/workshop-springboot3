@@ -2,6 +2,7 @@ package com.alexeyprojects.course.services;
 
 import com.alexeyprojects.course.entities.User;
 import com.alexeyprojects.course.repositories.UserRepository;
+import com.alexeyprojects.course.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +21,7 @@ public class UserService {
 
     public User findById(Long id){
         Optional<User> obj = repository.findById(id);
-        return obj.get();
+        return obj.orElseThrow(() -> new ResourceNotFoundException(id)); //Caso o optional esteja vazio, lança uma exceção.
     }
 
     public User insert(User user){
